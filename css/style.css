@@ -16,7 +16,7 @@
     --bg-color: #081b29;
     --second-bg-color: #112e42;
     --text-color: #ededed;
-    --main-color: #00abf0;
+    --main-color: #28af07;
 }
 
 html{
@@ -576,7 +576,8 @@ span{
 
 .contact {
     min-height: auto;
-        padding-bottom: 7rem;
+    padding-bottom: 7rem;
+    background: var(--second-bg-color);
 }
 
 .contact h2{
@@ -601,7 +602,7 @@ span{
 .contact form .input-box .input-field{
     position: relative;
     width: 49%;
-    margin: .8rem 0;    
+    margin: .8rem 0;
 }
 
 .contact form .input-box .input-field input,
@@ -627,7 +628,7 @@ span{
     left: 0;
     width: 0;
     height: 100%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
     border-radius: .6rem;
     z-index: -1;
     transition: .5s;
@@ -660,7 +661,7 @@ span{
     align-items: center;
     flex-wrap: wrap;
     padding: 2rem 9%;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text,
@@ -837,8 +838,7 @@ span{
     animation: none;
 }
 
-section:nth-child(odd) .animate.scroll,
-footer .animate.scroll{
+section:nth-child(odd) .animate.scroll{
     background: var(--second-bg-color);
 }
 
