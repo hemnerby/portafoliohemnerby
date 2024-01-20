@@ -282,12 +282,12 @@
         <form action="#">
             <div class="input-box">
                 <div class="input-field">
-                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Nombre" id="name" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Correo electrónico" required>
+                    <input type="text" placeholder="Correo electrónico" id="email" required>
                     <span class="focus"></span>
                 </div>
                 <span class="animate scroll" style="--i:3"></span>
@@ -295,12 +295,12 @@
 
             <div class="input-box">
                 <div class="input-field">
-                    <input type="number" placeholder="Número de teléfono" required>
+                    <input type="number" placeholder="Número de teléfono" id="phone" required>
                     <span class="focus"></span>
                 </div>
 
                 <div class="input-field">
-                    <input type="text" placeholder="Asunto" required>
+                    <input type="text" placeholder="Asunto" id="subject" required>
                     <span class="focus"></span>
                 </div>
 
@@ -308,7 +308,7 @@
             </div>
 
             <div class="textarea-field">
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje" required></textarea>
+                <textarea name="" id="message" cols="30" rows="10" placeholder="Mensaje" required></textarea>
                 <span class="focus"></span>
 
                 <span class="animate scroll" style="--i:7"></span>
@@ -337,7 +337,8 @@
         </div>
     </footer>
 
-
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="js/script.js"></script>
 </body>
 

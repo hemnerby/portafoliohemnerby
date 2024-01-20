@@ -50,3 +50,41 @@ window.onscroll = () => {
 
     footer.classList.toggle('show-animate', this.innerHeight + this.scrollY >= document.scrollingElement.scrollHeight);
 }
+
+    // send email
+    const form = document.querySelector("form");
+    const fullName = document.getElementById("name");
+    const email = document.getElementById("email");
+    const phone = document.getElementById("phone");
+    const subject = document.getElementById("subject");
+    const message = document.getElementById("message");
+
+    function sendEmail(){
+        const bodyMessage = `Full name: ${fullName.value}<br> Email: ${email.value}<br>
+        Phone Number: ${phone.value}<br> Message: ${message.value}<br>`;
+
+        Email.send({
+            SecureToken: "7471ce07-6fe4-44e3-8eaf-873d1fa7de5c",
+            To : 'hemnerbyyt07@gmail.com',
+            From : "hemnerbyyt07@gmail.com",
+            Subject : subject.value,
+            Body : bodyMessage
+        }).then(
+          message => {
+            if (message == "OK"){
+                Swal.fire({
+                    title: "Éxitoso!",
+                    text: "Mensaje enviado!",
+                    icon: "success"
+                  });
+            }
+          }
+        );
+    }
+
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        sendEmail();
+        form.reset();
+    })
