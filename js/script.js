@@ -88,3 +88,13 @@ window.onscroll = () => {
         sendEmail();
         form.reset();
     })
+
+
+    function FullView(ImgLink){
+        document.getElementById("FullImage").src = ImgLink;
+        document.getElementById("fullImageView").style.display = "block";
+    }
+
+    function CloseFullView(){
+        document.getElementById("fullImageView").style.display = "none";
+    }
