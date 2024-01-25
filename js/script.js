@@ -92,7 +92,7 @@ window.onscroll = () => {
 
     function FullView(ImgLink){
         document.getElementById("FullImage").src = ImgLink;
-        document.getElementById("fullImageView").style.display = "block";
+        document.getElementById("fullImageView").style.display = "flex";
     }
 
     function CloseFullView(){
