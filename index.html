@@ -266,7 +266,7 @@
 
     <!-- Module section design -->
     <section class="module" id="module">
-        <h2 class="heading">Módulo</span><span class="animate scroll" style="--i:1"></span></h2>
+        <h2 class="heading"><span>Módulo</span></span><span class="animate scroll" style="--i:1"></span></h2>
 
         <div class="about-content">
             <h3>Evaluación De Los Aprendizajes<span class="animate scroll" style="--i:2"></span></h3>
@@ -283,8 +283,25 @@
                 <div class="module-box">
                     <div class="module-content">
                         <div class="content">
-                            <img src="images/Foro sobre la evaluación.jpg" alt="Foro sobre la evaluación"
-                            onclick="FullView(this.src)">
+                            <img class="foro1" src="images/Foro sobre la evaluación.jpg" alt="Foro sobre la evaluación"
+                            onclick="FullView0()">
+                        </div>
+                        <span class="animate scroll" style="--i:3"></span>
+                    </div>
+
+                    
+
+                    
+
+                    
+                </div>
+
+                <h3 class="title">Instrumentos de Evaluación<span class="animate scroll" style="--i:2"></span></h3>
+                <div class="module-box">
+                    <div class="module-content">
+                        <div class="content">
+                            <img class="foro1" src="images/Instrumentos.jpg" alt="Foro sobre la evaluación"
+                            onclick="FullView2()">
                         </div>
                         <span class="animate scroll" style="--i:3"></span>
                     </div>
@@ -303,7 +320,7 @@
                     <div class="module-content">
                         <div class="content">
                             <img src="images/Técnicas e instrumentos - Hemnerby.jpg" alt="Técnicas e instrumentos"
-                            onclick="FullView(this.src)">
+                            onclick="FullView1()">
                         </div>
                         <span class="animate scroll" style="--i:6"></span>
                     </div>
@@ -315,17 +332,41 @@
                     
 
                 </div>
+
+                <h3 class="title">Mapa Mental<span class="animate scroll" style="--i:5"></span></h3>
+                <div class="module-box">
+                    <div class="module-content">
+                        <div class="content">
+                            <img src="images/La Rubrica Grupo 5.jpg" alt="Técnicas e instrumentos"
+                            onclick="FullView3()">
+                        </div>
+                        <span class="animate scroll" style="--i:6"></span>
+                    </div>
+
+                    
+
+                    
+
+                    
+
+                </div>
+
             </div>
+
+            
 
             
 
         </div>
 
-        <div id="fullImageView">
-            <img id="FullImage">
+        <div id="fullImageView">            
             <span id="CloseButton" onclick="CloseFullView()">&times;</span>
         </div>
-        
+
+        <object id="visor-pdf-uno" class="visor-pdf visor-pdf-uno" data="Documents/Evaluacion Grupo 6.pdf" type="application/pdf"></object>
+        <object id="visor-pdf-dos" class="visor-pdf visor-pdf-dos" data="Documents/Técnicas e instrumentos - Hemnerby.pdf" type="application/pdf"></object>
+        <object id="visor-pdf-tres" class="visor-pdf visor-pdf-tres" data="Documents/Creación de tres Instrumentos de Evaluación.pdf" type="application/pdf"></object>
+        <object id="visor-pdf-cuatro" class="visor-pdf visor-pdf-cuatro" data="Documents/La Rubrica Grupo 5.pdf" type="application/pdf"></object>
 
     </section>
 

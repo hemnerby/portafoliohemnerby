@@ -90,11 +90,32 @@ window.onscroll = () => {
     })
 
 
-    function FullView(ImgLink){
-        document.getElementById("FullImage").src = ImgLink;
+    function FullView0(){
         document.getElementById("fullImageView").style.display = "flex";
+        document.getElementById("visor-pdf-uno").style.display = "flex";
+    }
+
+    function FullView1(){
+        document.getElementById("fullImageView").style.display = "flex";
+        document.getElementById("visor-pdf-dos").style.display = "flex";
+    }
+
+    function FullView2(){
+        document.getElementById("fullImageView").style.display = "flex";
+        document.getElementById("visor-pdf-tres").style.display = "flex";
+    }
+
+    function FullView3(){
+        document.getElementById("fullImageView").style.display = "flex";
+        document.getElementById("visor-pdf-cuatro").style.display = "flex";
     }
 
     function CloseFullView(){
         document.getElementById("fullImageView").style.display = "none";
+        document.querySelector(".visor-pdf-uno").style.display = "none";
+        document.querySelector(".visor-pdf-dos").style.display = "none";
+        document.querySelector(".visor-pdf-tres").style.display = "none";
+        document.querySelector(".visor-pdf-cuatro").style.display = "none";
     }
+
+    
